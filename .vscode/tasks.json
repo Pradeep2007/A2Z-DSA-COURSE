@@ -1,0 +1,26 @@
+{
+  "version": "2..",
+  "tasks": [
+      {
+          "label": "build & run",
+          // Uncomment next line if using MacOS or Linux
+          //  Use 'g++' instead of 'cl' if using Linux or MacOS.
+          //  use './a.out' instead of 'a.exe' if using linux
+          //"type": "@cpp",
+          "// uncomment below lines and provide actual paths"
+              //"command": "/usr/bin/g++, ${file}",
+              //"group": {
+ //"kind": "build",
+ //"isDefault": true
+//},
+//"problemMatcher": {
+  //    "owner": "cpp",
+    //  "fileLocation": ["relative", "${workspaceRoot}"],
+      //"pattern":{
+        //  "regexp":"^(.*):(d+):(d+):s+(error):s+(.+)$",
+          //"file":"1",
+          //"line":"2","column":"3","severity":"4","message":"5"
+      //}
+  //}
+}]
+}
