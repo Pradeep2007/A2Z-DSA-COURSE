@@ -31,7 +31,7 @@ node* buildTree(node* root) {
     return root;
 
 }
-void lowerOrderTransversal(node* root){
+void levelOrderTransversal(node* root){
     queue<node*>q;
     q.push(root);
     q.push(NULL);
@@ -107,6 +107,7 @@ void buildTreeFromLevelOrder(node* &root){
             temp->left=new node(leftData);
             q.push(temp->left);
         }
+        // else return;
         cout<<"Enter the data for right of "<<temp->data<<endl;
         int rightData;
         cin>>rightData;
@@ -115,7 +116,7 @@ void buildTreeFromLevelOrder(node* &root){
             temp->right=new node(rightData);
             q.push(temp->right);
         }
-        
+        // else return;
     }
     
 }

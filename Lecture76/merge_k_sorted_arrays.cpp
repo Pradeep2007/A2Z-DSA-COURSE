@@ -39,3 +39,5 @@ vector<int> mergeKSortedArrays(vector<vector<int>>&kArrays, int k)
     }
     return ans;
 }
+//time com->o(n*klog(k))
+//space comp->n*k

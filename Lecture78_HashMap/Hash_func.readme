@@ -1,0 +1,30 @@
+HASH MAP->IT INSERT,DELETE,UPDATE IN O(1)
+HASH FUNCTION  a.HASH CODE
+               b.compression FUNCTION
+the function of hash code is to convert a string into a number.
+the function of compression function is to compress given number 
+into required array size.
+
+2.COLLISION->collision means that when two string have same char but different in 
+their order so,if we generate hash code by their ASCII values then their hash CODE 
+WILL be same so it is called collision.
+
+3.COLLISION HANDELING
+a.OPEN HASHING->same place pr hi dal do/it is also called separate chaining
+b.CLOSED ADDRESSING->next place pr dal do and next place will be selected 
+according to H(a)=h(a)+F(i)
+a.LINEAR PROBING-> IN THIS F(i)=i;
+b.QUADRATIC PROBUNG->in thid F(i)=i^2;
+
+COMPLEXITY ANALYSIS
+HASH CODE:
+N->NO. OF WORDS
+K->WORD LENGTH
+IF N>>>>K
+THEN COM OF HASH CODE IS O(1)
+
+IF B->NO. OF BOXES AVAILABLE
+N->NO. OF WORDS
+THEN N/B=LOAD FACTOR
+WE ALWAYS ENSURE N/B<0.7
+if n increases then we have to increase b also,so we have to rehasing
